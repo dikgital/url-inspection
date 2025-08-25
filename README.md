@@ -47,7 +47,7 @@ Cocok untuk praktisi SEO yang butuh cek status indexing ribuan URL tanpa harus m
 
 4. Buat Service Account dan generate file JSON credentials. Kalau bingung cara integrasiin Google API, Bisa [baca di artikelku ini](https://dikgital.com/technical-seo/google-cloud-api)
 
-5. Simpan file JSON credentials (misalnya auth.json) di root project.
+5. Simpan file JSON credentials (misalnya account.json) di root project.
 
 6. Pastikan Service Account ini ditambahkan sebagai user (restricted role) di property Google Search Console dengan minimal permission read-only.
 
@@ -59,7 +59,7 @@ bulk-url-inspection-gsc/
 ├── cek_status_url.csv       # input daftar URL (contoh)
 ├── requirements.txt
 ├── README.md
-└── auth.json                # file credentials (JANGAN diupload ke repo publik!)
+└── account.json                # file credentials (JANGAN diupload ke repo publik!)
 ```
 
 ## 📥 Input File (CSV)
