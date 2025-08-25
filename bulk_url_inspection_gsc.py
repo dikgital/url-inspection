@@ -7,11 +7,11 @@ from googleapiclient.errors import HttpError
 
 # --- SETUP ---
 # Path ke file credentials
-SERVICE_ACCOUNT_FILE = "diki-python-seo.json"
+SERVICE_ACCOUNT_FILE = "account.json"
 SCOPES = ['https://www.googleapis.com/auth/webmasters.readonly']
 SITE_URL = 'sc-domain:betterplace.cc'  # Ganti dengan domain kamu
-CSV_INPUT = "url_inspection_2025-08-08_02.csv"
-CSV_OUTPUT = "url_inspection_2025-08-08_02_INDEX-STATUS.csv"
+CSV_INPUT = "url_list.csv"
+CSV_OUTPUT = "url_list_INDEX-STATUS.csv"
 
 # Setup credentials dan API client
 credentials = service_account.Credentials.from_service_account_file(
@@ -86,3 +86,4 @@ with open(CSV_OUTPUT, 'w', newline='') as csvfile:
         writer.writerow(row)
 
 print(f"\n✅ Selesai! Hasil disimpan ke '{CSV_OUTPUT}'")
+
